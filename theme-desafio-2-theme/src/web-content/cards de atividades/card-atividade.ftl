@@ -70,14 +70,14 @@
         </div>
         <div class="modal-body">
           <div class="w-100 mb-3">
-            <div class="input-group input-group-sm">
+            <div class="input-group input-group-sm flex-column flex-sm-row ">
               <span class="input-group-text" id="inputGroup-sizing-sm">Titulo</span>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
+              <input type="text" class="form-control w-100 w-sm-auto" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
             </div>
           </div>
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-3 flex-column flex-sm-row ">
               <span class="input-group-text" id="inputGroup-sizing-sm">Descrição</span>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
+              <input type="text" class="form-control w-100 w-sm-auto" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
             </div>
             <div class="w-100 flex-column flex-sm-row d-flex align-items-center mb-3 gap-sm-1">
             <select class="form-select w-100 mt-3 mt-sm-0" aria-label="Default select example">
@@ -92,7 +92,7 @@
               <option value="2">2</option>
               <option value="3">3</option>
             </select>
-            <div class="input-group flex-column input-group-sm mb-3  mb-sm-1 w-100 w-sm-auto">
+            <div class="input-group flex-column input-group-sm mt-3 mt-sm-0 w-100 w-sm-auto">
               <input type="date" id="dataEntrega" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
           </div>
@@ -184,14 +184,14 @@
                 </div>
                 <div class="modal-body">
                   <div class="w-100 mb-3">
-                      <div class="input-group input-group-sm">
+                      <div class="input-group input-group-sm flex-column flex-sm-row">
                         <span class="input-group-text" id="inputGroup-sizing-sm">Titulo</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"  value="${atividade.titulo}">
+                        <input type="text" class="form-control w-100 w-sm-auto" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"  value="${atividade.titulo}">
                       </div>
                     </div>
-                    <div class="input-group input-group-sm mb-3">
+                    <div class="input-group input-group-sm mb-3 flex-column flex-sm-row">
                       <span class="input-group-text" id="inputGroup-sizing-sm">Descrição</span>
-                      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="${atividade.descricao}">
+                      <input type="text" class="form-control w-100 w-sm-auto" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="${atividade.descricao}">
                     </div>
                     <div class="w-100 flex-column flex-sm-row d-flex align-items-center mb-3 gap-sm-1">
                       <select class="form-select w-100 w-sm-50 mt-3 mt-sm-0" aria-label="Default select example">
@@ -207,7 +207,7 @@
                         <option value="2">2</option>
                         <option value="3">3</option>
                       </select>
-                      <div class="input-group flex-column input-group-sm mb-3  mb-sm-1 w-100 w-sm-auto">
+                      <div class="input-group flex-column input-group-sm  mt-3 mt-sm-0 w-100 w-sm-auto">
                         <input type="date" id="dataEntrega" class="form-control w-100" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="${atividade.dataEntrega?replace('/', '-')?date('dd-MM-yyyy')?string('yyyy-MM-dd')}">
                       </div>
                     </div>
