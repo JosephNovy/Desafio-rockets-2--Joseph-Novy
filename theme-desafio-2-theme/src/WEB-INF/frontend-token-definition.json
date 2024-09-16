@@ -1,0 +1,77 @@
+{
+    "frontendTokenCategories": [
+        {
+            "frontendTokenSets": [
+                {
+                    "frontendTokens": [
+                        {
+                            "defaultValue": "#000000",
+                            "editorType": "ColorPicker",
+                            "label": "primary",
+                            "mappings": [
+                                {
+                                    "type": "cssVariable",
+                                    "value": "primary"
+                                }
+                            ],
+                            "name": "primaryColor",
+                            "type": "String"
+                        },
+                        {
+                            "defaultValue": "#ffffff",
+                            "editorType": "ColorPicker",
+                            "label": "Secundary",
+                            "mappings": [
+                                {
+                                    "type": "cssVariable",
+                                    "value": "secundary"
+                                }
+                            ],
+                            "name": "secundaryColor",
+                            "type": "String"
+                        },
+                        {
+                            "defaultValue": "#ece9e9",
+                            "editorType": "ColorPicker",
+                            "label": "BackGround",
+                            "mappings": [
+                                {
+                                    "type": "cssVariable",
+                                    "value": "background"
+                                }
+                            ],
+                            "name": "backgroundColor",
+                            "type": "String"
+                        },
+                        {
+                            "defaultValue": "sans-serif",
+                            "label": "font-family",
+                            "mappings": [
+                                {
+                                    "type": "cssVariable",
+                                    "value": "fontFamily"
+                                }
+                            ],
+                            "name": "fontFamily",
+                            "type": "String",
+                            "validValues": [
+                                {
+                                    "label": "sans-serif",
+                                    "value": "sans-serif"
+                                },
+                                {
+                                    "label": "monospace",
+                                    "value": "Courier New"
+                                }
+                            ]
+                        }
+                    ],
+                    "label": "primary-buttons",
+                    "name": "primaryButtons"
+                }
+            ],
+            "label": "Paginas",
+            "name": "paginas"
+        }
+    ]
+}

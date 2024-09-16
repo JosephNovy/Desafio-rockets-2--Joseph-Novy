@@ -1,0 +1,164 @@
+.componente-atividades{
+  max-width: 1450px;
+.card {
+    background-color: var(--background-color-chart);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px var(--color-shadow);
+    .card-title{
+        font-size: 24px !important;
+    }
+    .situacao{
+      padding: 4px 6px;
+      height: 36px;
+      border-radius: 10px;
+    }
+    .Pendente{
+        color:rgb(6, 60, 175);
+        
+        background-color: rgb(6, 60, 175, 0.10);
+        border: 1px solid rgb(6, 60, 175, 0.8);   
+    }
+    .Concluído{
+        color:rgb(30, 110, 27);
+        background-color: rgb(42, 155, 38, 0.10);
+        border: 1px solid rgb(42, 155, 38, 0.8);
+    }
+    .Cancelado{
+        color: rgb(196, 19, 19);
+        background-color: rgb(196, 19, 19, 0.10);
+        border: 1px solid rgb(196, 19, 19, 0.8);
+    }
+  }
+  
+.raia-atividade{
+  min-height: 200px;
+}
+.filtro-container{
+  border-bottom: 1px solid #9a9a9a;
+}
+  .btn-new-atividade{
+    background-color: rgb(58, 58, 160);
+    color:#ffffff;
+    font-weight: 700;
+    border: 1px solid rgb(58, 58, 160);
+    border-radius: 4px;
+    &:hover{
+      background-color: rgb(46, 46, 131);
+      border: 1px solid rgb(46, 46, 131);
+      color:#ffffff;
+    }
+    &:active{
+      background-color: rgb(47, 47, 129);
+      border-color: 1px solid rgb(47, 47, 129);
+    }
+  }
+  .form-control {
+    height: 37.99px !important;
+    border-radius: 10px !important;
+  }
+  .modal-dialog {
+    margin: 15% auto;
+    max-width: 700px;
+  }
+  .modal-content {
+    background-color: var(--background-color-chart);
+    .input-group{
+      max-width: 100%;
+    }
+    .form-control{
+      border-radius: 0 10px 10px 0 !important;
+    }
+    #dataEntrega.form-control{
+      border-radius: 10px!important;
+    }
+  }
+  .modal-body,
+  .modal-footer {
+    border-top: 0.0625rem solid var(--espacador-link);
+  }
+  .modal-header {
+    border-bottom: 0.0625rem solid var(--espacador-link);
+  }
+  #exampleModalLabel,
+  #inputGroup-sizing-sm,
+  .close-icon,
+  #dropdownMenuButton,
+  .dropdown-list span,
+  .close {
+    color: var(--text-color);
+  }
+  .input-group-text {
+    background-color: var(--background-color);
+    border: 1px solid var(--background-color);
+    color: var(--text-color);
+  }
+  .dropdown-card-list {
+    display: none;
+    top: 60px;
+    right: 10px;
+    z-index: 20;
+    background-color: var(--background-color);
+    box-shadow: 0 0 5px var(--dark-mode-color-shadow);
+    border-radius: 12px;
+  }
+  #prioridadeSelect {
+    height: 40px !important;
+  }
+  .form-control::-webkit-datetime-edit {
+    height: 30px !important;
+    display: flex;
+  }
+  .form-control::-webkit-datetime-edit-fields-wrapper{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .btn-salvar-modal {
+    background-color: rgb(60, 134, 60);
+    border: 1px solid rgb(60, 134, 60);
+    color: #ffffff;
+    font-weight: 600;
+    &:hover {
+      background-color: rgb(48, 105, 48);
+      border: 1px solid rgb(48, 105, 48);
+    }
+  }
+  .form-control, .form-select {
+    border-radius: 10px !important;
+    height: 40px;
+    &:focus {
+      border-color: rgb(107, 199, 199);
+    }
+  }
+  .btn-cancelar-modal {
+    background-color: rgb(172, 35, 35);
+    border: 1px solid rgb(172, 35, 35);
+    color: #ffffff;
+    font-weight: 600;
+    &:hover {
+      background-color: rgb(131, 27, 27);
+      border: 1px solid rgb(131, 27, 27);
+    }
+  }
+  .dropdown-card-list.show {
+    display: block;
+  }
+  .modal {
+      z-index: 1050;
+  }
+  
+  .modal.show {
+      z-index: 1060;
+  }
+  .separador {
+    background-color: #9a9a9a94;
+    width: 2px;
+  }
+  .atividade-status {
+    font-size: 28px;
+  }
+  @media (min-width: 576px) {
+    .input-group{
+      max-width: 200px;
+    }
+  }
+}

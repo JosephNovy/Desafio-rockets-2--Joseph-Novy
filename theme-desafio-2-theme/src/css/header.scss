@@ -1,0 +1,126 @@
+#banner {
+  border-bottom: 1px solid var(--cdm-cinza-escuro-2);
+}
+
+#heading-mobile,
+#heading {
+  .logo-sphera-header {
+    img {
+      width: 83px;
+      height: 55px;
+    }
+  }
+}
+
+#navigation {
+
+  .nav-link {
+    span {
+      font-size: 32px;
+
+      &:hover {
+        color: var(--cdm-verde-claro);
+      }
+    }
+  }
+
+  .dropdown-menu::after {
+    padding-top: 0;
+  }
+  .dropdown-toggle::after{
+    display: none !important;
+  }
+  .dropdown-menu {
+    z-index: 900 !important;
+  }
+
+  .child-menusubmenu-link-nomral{
+    background-color: var(--background-color-submenu);
+  }
+
+  .link-normal-mobile {
+    border-bottom: 1px solid var(--cdm-cinza-escuro-2);
+  }
+  .icone-menu-header-mobile{
+    transition: all 1s;
+  }
+
+  .submenu-link-nomral {
+    border-bottom: 1px solid rgb(221, 221, 221);
+    border-radius: 17px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  .link-header-item {
+    border-bottom: 1px solid var(--espacador-link);
+  }
+
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+
+  a {
+    color: var(--cdm-preto2);
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+  .rotate {
+    transform: rotate(90deg);
+    color: var(--espacador-link);
+    
+  }
+  #regularItemsDropdown {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+#regularItemsDropdown.show {
+    opacity: 1;
+    visibility: visible;
+}
+  .menu-links{
+    background-color: var(--background-color-header);
+    top: 55px;
+    z-index: 9;
+    transition: all 1s;
+  }
+
+  @media (max-width: 1700px) {
+    .servico-dropdown {
+      left: -140% !important;
+      right: 0%;
+      top: 95px !important;
+      transform: translate3d(0px, 0px, 0px) !important;
+    }
+
+    .dropdown-menu {
+      max-width: 400px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    .submenu-link-nomral {
+      background-color: var(--cdm-cinza-background-2);
+      border-radius: 0px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  #navigation {
+    padding-left: 0px;
+  }
+}

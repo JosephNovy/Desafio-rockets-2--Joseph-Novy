@@ -1,0 +1,27 @@
+{
+	"fieldSets": [ {
+            "fields": [
+		{
+		
+                    "name": "habilitarCollapse",
+                    "label": "Habilitar Collapse",
+                    "description": "Selecione se deseja que o componente possua collapse.",
+                    "type": "select",
+                    "dataType": "string",
+                    "typeOptions": {
+                        "validValues": [
+                            {
+                                "label": "Habilitado",
+                                "value": "true"
+                            },
+                            {
+                                "label": "Desabilitado",
+                                "value": "false"
+                            }
+                        ]
+                    },
+                    "defaultValue": "true"
+                }
+		]
+	}]
+}

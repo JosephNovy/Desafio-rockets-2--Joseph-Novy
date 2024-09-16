@@ -1,0 +1,19 @@
+.my-container {
+  background-color: var(--background-color-chart);
+  border-radius: 4px;
+  .drop-zone-collapse {
+    min-width: 100px;
+    min-height: 100px;
+    padding: 0 !important;
+    display: none !important;
+  }
+  .drop-zone-collapse.show {
+    display: block !important;
+  }
+  .btn-primary {
+    background-color: var(--btn-primary);
+    border-color: var(--btn-primary);
+    color: #fff;
+    font-weight: 700;
+  }
+}

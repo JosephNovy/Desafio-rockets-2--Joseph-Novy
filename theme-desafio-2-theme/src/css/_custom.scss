@@ -1,0 +1,131 @@
+/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
+
+/* inject:imports */
+
+@import "liferay-font-awesome/scss/font-awesome";
+@import "liferay-font-awesome/scss/glyphicons";
+@import "./color_scheme/dark.scss";
+@import "./header.scss";
+@import "./variables";
+@import "./web-content/card-atividade.scss";
+@import "./fragment/collapse.scss";
+@import "./web-content/dolar-hoje.scss";
+@import "./web-content/gráficos/grafico-barra.scss";
+@import "./web-content/gráficos/grafico-linha.scss";
+@import "./web-content/gráficos/grafico-mixed.scss";
+@import "./web-content/gráficos/grafico-polar.scss";
+@import "./web-content/gráficos/grafico-rosca.scss";
+@import "./web-content/gráficos/grafico-rosca-sm.scss";
+@import "./fragment/paragrafoComTitulo.scss";
+@import "./fragment/paragrafoSemTitulo.scss";
+
+/* endinject */
+
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+:root {
+  --background-color: var(--background);
+  --background-color-header: var(--background);
+  --background-color-chart: var(--secundary);
+  --text-color: var(--primary);
+  --color-shadow: rgba(0, 0, 0, 0.5);
+  --background-color-submenu: #f0f0f0;
+  --espacador-link: #dfdfdf;
+  --btn-primary: #68a5e6;
+  .site-name {
+    color: var(--primary);
+  }
+}
+[data-theme="dark"] {
+  --background-color: #55757e;
+  --background-color-header: #7098a3;
+  --background-color-chart: #6d98a3;
+  --text-color: #d1d1d1;
+  --color-shadow: #d1d1d1;
+  --background-color-submenu: #638891;
+  --espacador-link: #7fa8b3;
+  --btn-primary: #557598;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 1s;
+  padding-right: 0 !important;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#banner {
+  background-color: var(--background-color-header);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: all 1s;
+  a {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+.site-name {
+  color: var(--text-color) !important;
+  font-size: 56px;
+  font-family: ui-monospace;
+  font-weight: 600;
+}
+.portlet-decorate .portlet-content {
+  background-color: transparent !important ;
+  padding: 0;
+  transition: all 1s;
+}
+.portlet {
+  margin-bottom: 0;
+}
+.contanier-grafico-doughnut,
+.contanier-grafico-doughnut-small,
+.contanier-grafico-mychartline,
+.contanier-grafico-mixed-chart,
+.contanier-grafico-mychart,
+.texto-web-content,
+.texto-content {
+  background-color: var(--background-color-chart);
+  transition: all 1s;
+}
+.toggle-button {
+  border: none;
+  box-shadow: inset 0 0 5px var(--color-shadow);
+  border-radius: 20px;
+  width: 70px;
+  height: 35px;
+  background-color: var(--background-color-chart);
+  &:focus {
+    outline: none;
+  }
+  #icon-sunny {
+    color: #d4c926;
+  }
+  #icon-mode_night {
+    color: #5bc3dde3;
+  }
+}
+
+.gap-sm-1 {
+  @media (min-width: 576px) {
+    gap: 8px !important;
+  }
+}
+
+.w-sm-50 {
+  @media (min-width: 576px) {
+    width: 50% !important;
+  }
+}
