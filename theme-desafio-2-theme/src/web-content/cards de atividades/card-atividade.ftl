@@ -80,13 +80,13 @@
               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" >
             </div>
             <div class="w-100 flex-column flex-sm-row d-flex align-items-center mb-3 gap-sm-1">
-            <select class="form-select w-100 w-sm-50 mt-3 mt-sm-0" aria-label="Default select example">
+            <select class="form-select w-100 mt-3 mt-sm-0" aria-label="Default select example">
               <option selected>Status</option>
               <option value="Concluido">Concluido</option>
               <option value="Em_andamento">Em andamento</option>
               <option value="Cancelado">Cancelado</option>
             </select>
-            <select class="form-select w-100 w-sm-50 mt-3 mt-sm-0" aria-label="Default select example" >
+            <select class="form-select w-100 mt-3 mt-sm-0" aria-label="Default select example" >
               <option selected="Sem prioridade">Sem prioridade</option>
               <option value="1">1</option>
               <option value="2">2</option>
